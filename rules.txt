@@ -1,6 +1,6 @@
     //Name: BRAND key lookup
     //Comment:
-    Result("PROD_CATG_KEY" -> INT) := validateKey(
+    111Result("PROD_CATG_KEY" -> INT) := validateKey(
       Do lookup "PROD_CATG_KEY" from "BRAND_CACHE" where
         Field("PROD_CATG_CODE") === Message("OppDetail.category") and
         Field("PROD_CATG_ACTIVE_INDC") === "Y");
